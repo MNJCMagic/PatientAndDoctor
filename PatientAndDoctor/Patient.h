@@ -8,11 +8,17 @@
 
 #import <Foundation/Foundation.h>
 
+
+@class Doctor;
+
 @interface Patient : NSObject
 
 @property (nonatomic, strong) NSString* name;
 @property (nonatomic, assign) NSInteger age;
+@property BOOL healthCard;
+//@property (nonatomic, weak) Doctor* doctor;
 
--(instancetype)initWithName:(NSString*)name age:(NSInteger)age;
+-(instancetype)initWithName:(NSString*)name age:(NSInteger)age healthCard:(BOOL)healthCard;
+-(void)visitDoctor:(Doctor*)doctor;
 
 @end

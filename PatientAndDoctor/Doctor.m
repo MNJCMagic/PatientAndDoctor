@@ -7,6 +7,7 @@
 //
 
 #import "Doctor.h"
+#import "Patient.h"
 
 @implementation Doctor
 
@@ -16,6 +17,7 @@
     if (self) {
         _name = name;
         _specialization = specialization;
+        _acceptedPatients = [[NSMutableSet alloc] init];
     }
     return self;
 }
