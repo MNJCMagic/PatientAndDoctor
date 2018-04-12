@@ -20,5 +20,6 @@
 
 -(instancetype)initWithName:(NSString*)name age:(NSInteger)age healthCard:(BOOL)healthCard;
 -(void)visitDoctor:(Doctor*)doctor;
+-(void)requestMedicationfrom:(Doctor*)doctor for:(NSString*)illness;
 
 @end

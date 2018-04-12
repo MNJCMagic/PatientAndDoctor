@@ -16,6 +16,7 @@
 @property (nonatomic, strong) NSString* name;
 @property (nonatomic, strong) NSString* specialization;
 @property (nonatomic, strong) NSMutableSet* acceptedPatients;
+@property (nonatomic, strong) NSDictionary* diseases;
 
 -(instancetype)initWithName:(NSString*)name specialization:(NSString*)specialization;
 

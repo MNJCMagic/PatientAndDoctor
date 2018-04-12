@@ -20,6 +20,9 @@ int main(int argc, const char * argv[]) {
         
         [dave visitDoctor:doctorBob];
         [debbie visitDoctor:doctorBob];
+        [dave requestMedicationfrom:doctorBob for:@"headache"];
+        [debbie requestMedicationfrom:doctorBob for:@"headache"];
+        [dave requestMedicationfrom:doctorBob for:@"cancer"];
     }
     return 0;
 }

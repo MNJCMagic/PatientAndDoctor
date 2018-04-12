@@ -18,6 +18,11 @@
         _name = name;
         _specialization = specialization;
         _acceptedPatients = [[NSMutableSet alloc] init];
+        _diseases = @{
+                      @"headache" : @"tylenol",
+                        @"cancer" : @"chemotherapy",
+                     @"infection" : @"antibiotics"
+                                   };
     }
     return self;
 }

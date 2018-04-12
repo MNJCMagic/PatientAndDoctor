@@ -34,4 +34,12 @@
     }
     
 }
+
+-(void)requestMedicationfrom:(Doctor*)doctor for:(NSString*)illness {
+    if (![doctor.acceptedPatients containsObject:self]) {
+        NSLog(@"Sorry, you're not a patient!");
+    } else {
+        NSLog(@"Patient %@ asks for help with %@.\n Doctor %@ prescribes %@", self.name, illness, doctor.name, [doctor.diseases objectForKey:illness]);
+    }
+}
 @end
