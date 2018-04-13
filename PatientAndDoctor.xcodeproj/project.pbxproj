@@ -10,6 +10,7 @@
 		27BD7A89207EE2E200D7F96E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 27BD7A88207EE2E200D7F96E /* main.m */; };
 		27BD7A91207EE30100D7F96E /* Patient.m in Sources */ = {isa = PBXBuildFile; fileRef = 27BD7A90207EE30100D7F96E /* Patient.m */; };
 		27BD7A94207EE30700D7F96E /* Doctor.m in Sources */ = {isa = PBXBuildFile; fileRef = 27BD7A93207EE30700D7F96E /* Doctor.m */; };
+		27BD7AB6207FD38600D7F96E /* CentralizedMedicalRecords.m in Sources */ = {isa = PBXBuildFile; fileRef = 27BD7AB5207FD38600D7F96E /* CentralizedMedicalRecords.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +32,8 @@
 		27BD7A90207EE30100D7F96E /* Patient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Patient.m; sourceTree = "<group>"; };
 		27BD7A92207EE30700D7F96E /* Doctor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Doctor.h; sourceTree = "<group>"; };
 		27BD7A93207EE30700D7F96E /* Doctor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Doctor.m; sourceTree = "<group>"; };
+		27BD7AB4207FD38600D7F96E /* CentralizedMedicalRecords.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CentralizedMedicalRecords.h; sourceTree = "<group>"; };
+		27BD7AB5207FD38600D7F96E /* CentralizedMedicalRecords.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CentralizedMedicalRecords.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +67,8 @@
 			isa = PBXGroup;
 			children = (
 				27BD7A88207EE2E200D7F96E /* main.m */,
+				27BD7AB4207FD38600D7F96E /* CentralizedMedicalRecords.h */,
+				27BD7AB5207FD38600D7F96E /* CentralizedMedicalRecords.m */,
 				27BD7A8F207EE30100D7F96E /* Patient.h */,
 				27BD7A90207EE30100D7F96E /* Patient.m */,
 				27BD7A92207EE30700D7F96E /* Doctor.h */,
@@ -129,6 +134,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27BD7AB6207FD38600D7F96E /* CentralizedMedicalRecords.m in Sources */,
 				27BD7A89207EE2E200D7F96E /* main.m in Sources */,
 				27BD7A91207EE30100D7F96E /* Patient.m in Sources */,
 				27BD7A94207EE30700D7F96E /* Doctor.m in Sources */,

@@ -35,11 +35,13 @@
     
 }
 
--(void)requestMedicationfrom:(Doctor*)doctor for:(NSString*)illness {
+-(void)requestMedicationfrom:(Doctor*)doctor for:(NSString*)illness andLogInRecords:(CentralizedMedicalRecords*)records {
     if (![doctor.acceptedPatients containsObject:self]) {
         NSLog(@"Sorry, you're not a patient!");
-    } else {
-        NSLog(@"Patient %@ asks for help with %@.\n Doctor %@ prescribes %@", self.name, illness, doctor.name, [doctor.diseases objectForKey:illness]);
+    } else { [doctor prescribeMedicineTo:self for:illness andLogInRecord:records ];
+        
+        
+        
     }
 }
 @end

@@ -7,9 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import "CentralizedMedicalRecords.h"
 
 @class Patient;
+@class CentralizedMedicalRecords;
 
 @interface Doctor : NSObject
 
@@ -17,8 +18,10 @@
 @property (nonatomic, strong) NSString* specialization;
 @property (nonatomic, strong) NSMutableSet* acceptedPatients;
 @property (nonatomic, strong) NSDictionary* diseases;
+@property (nonatomic, strong) CentralizedMedicalRecords* records;
 
--(instancetype)initWithName:(NSString*)name specialization:(NSString*)specialization;
+- (instancetype)initWithName:(NSString *)name specialization:(NSString *)specialization andRecords:(CentralizedMedicalRecords*)records;
 
+-(void)prescribeMedicineTo:(Patient*)patient for:(NSString *)illness andLogInRecord:(CentralizedMedicalRecords*)records;
 
 @end

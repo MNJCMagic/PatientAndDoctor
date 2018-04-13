@@ -9,20 +9,24 @@
 #import <Foundation/Foundation.h>
 #import "Patient.h"
 #import "Doctor.h"
+#import "CentralizedMedicalRecords.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
+        
+        CentralizedMedicalRecords *records = [[CentralizedMedicalRecords alloc] init];
+        
         Patient *dave = [[Patient alloc] initWithName:@"Dave" age:39 healthCard:YES];
         
         Patient *debbie = [[Patient alloc] initWithName:@"Debbie" age:39 healthCard:NO];
         
-        Doctor *doctorBob = [[Doctor alloc] initWithName:@"Doctor Bob" specialization:@"Urology"];
+        Doctor *doctorBob = [[Doctor alloc] initWithName:@"Bob" specialization:@"Urology" andRecords:records];
         
         [dave visitDoctor:doctorBob];
         [debbie visitDoctor:doctorBob];
-        [dave requestMedicationfrom:doctorBob for:@"headache"];
-        [debbie requestMedicationfrom:doctorBob for:@"headache"];
-        [dave requestMedicationfrom:doctorBob for:@"cancer"];
+        [dave requestMedicationfrom:doctorBob for:@"headache" andLogInRecords:records];
+        [dave requestMedicationfrom:doctorBob for:@"cancer" andLogInRecords:records];
+        
     }
     return 0;
 }

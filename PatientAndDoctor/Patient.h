@@ -10,6 +10,7 @@
 
 
 @class Doctor;
+@class CentralizedMedicalRecords;
 
 @interface Patient : NSObject
 
@@ -20,6 +21,6 @@
 
 -(instancetype)initWithName:(NSString*)name age:(NSInteger)age healthCard:(BOOL)healthCard;
 -(void)visitDoctor:(Doctor*)doctor;
--(void)requestMedicationfrom:(Doctor*)doctor for:(NSString*)illness;
+-(void)requestMedicationfrom:(Doctor*)doctor for:(NSString*)illness andLogInRecords:(CentralizedMedicalRecords*)records;
 
 @end
